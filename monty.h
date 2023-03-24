@@ -5,6 +5,8 @@
 #include <string.h>
 #include <stddef.h>
 #include <fcntl.h>
+#include <unistd.h>
+#include <errno.h>
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -37,5 +39,7 @@ typedef struct instruction_s
 } instruction_t;
 
 int main(int argc, char *argv[]);
+void push(int element);
+void display();
 
 #endif
